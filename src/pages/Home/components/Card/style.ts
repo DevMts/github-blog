@@ -1,26 +1,29 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const CardContainer = styled.section`
   width: 100%;
+  height: 100%;
   display: flex;;
   flex-wrap: wrap;
   gap: 2rem;
   margin-top: 3rem;
-`
-export const Card = styled.article`
-  width: auto;
+`;
+export const Card = styled(Link)`
+  width: 100%;
   max-width: 26rem;
   background: ${props => props.theme["base-post"]};
   border-radius: 10px;
   padding: 2rem;
-
+  text-decoration: none;
+  
   div{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 1rem;
     margin-bottom: 1.25rem;
-
+    
     h2{
       color: ${props => props.theme["base-title"]};
       font-size: 1.25rem;
@@ -44,4 +47,4 @@ export const Card = styled.article`
     -webkit-box-orient: vertical;
     color: ${props => props.theme["base-text"]};
   }
-`
+`;

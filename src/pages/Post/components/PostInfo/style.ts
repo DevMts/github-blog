@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
-
-export const PostInfoContainer= styled.section`
+export const PostInfoContainer = styled.section`
   padding: 2rem 2.5rem;
   width: 100%;
   display: flex;
@@ -32,7 +31,7 @@ export const PostInfoContainer= styled.section`
 
 
       a {
-        color: ${(props) => props.theme["blue"]};
+        color: ${props => props.theme["blue"]};
         font-size: 0.75rem;
         font-weight: bold;
         text-decoration: none;
@@ -42,11 +41,11 @@ export const PostInfoContainer= styled.section`
         border-bottom:1px solid transparent;
 
         &:hover{
-          border-bottom-color:${(props) => props.theme.blue};
+          border-bottom-color:${props => props.theme.blue};
         }
       } }
 
-`
+`;
 export const Dates = styled.div`
       margin-top: .5rem;
       display: flex;
@@ -63,14 +62,14 @@ export const Dates = styled.div`
         justify-content: flex-start;
 
         span{
-          color: ${(props) => props.theme["base-subtitle"]};
+          color: ${props => props.theme["base-subtitle"]};
         }
 
         svg {
-          color: ${(props) => props.theme["base-label"]};
+          color: ${props => props.theme["base-label"]};
           font-size: 1.25rem;
         }
 
         
       }
-`
+`;

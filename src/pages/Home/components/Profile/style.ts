@@ -33,14 +33,14 @@ width: 100%;
       align-items: flex-start;
 
       strong {
-        color: ${(props) => props.theme["base-title"]};
+        color: ${props => props.theme["base-title"]};
         font-size: 1.5rem;
         font-weight: bold;
         line-height: 1.3;
       }
 
       a {
-        color: ${(props) => props.theme["blue"]};
+        color: ${props => props.theme["blue"]};
         font-size: 0.75rem;
         font-weight: bold;
         text-decoration: none;
@@ -50,7 +50,7 @@ width: 100%;
         border-bottom:1px solid transparent;
 
         &:hover{
-          border-bottom-color:${(props) => props.theme.blue};
+          border-bottom-color:${props => props.theme.blue};
         }
       }
     }
@@ -72,14 +72,14 @@ export const Dates = styled.div`
         justify-content: flex-start;
 
         span{
-          color: ${(props) => props.theme["base-subtitle"]};
+          color: ${props => props.theme["base-subtitle"]};
         }
 
         svg {
-          color: ${(props) => props.theme["base-label"]};
+          color: ${props => props.theme["base-label"]};
           font-size: 1.25rem;
         }
 
         
       }
-`
+`;
