@@ -3,14 +3,14 @@ import styled from "styled-components";
 
 export const CardContainer = styled.section`
   width: 100%;
-  height: 100%;
   display: flex;;
   flex-wrap: wrap;
   gap: 2rem;
   margin-top: 3rem;
-`;
+  `;
 export const Card = styled(Link)`
   width: 100%;
+  height: auto;
   max-width: 26rem;
   background: ${props => props.theme["base-post"]};
   border-radius: 10px;
